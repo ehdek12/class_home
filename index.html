@@ -1,1 +1,180 @@
-학급공지홈페이지
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4학년 1반 학급 공지사항</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #ff6b9d;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.5em;
+            color: #666;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            background: #fff;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 3px solid #ffd4e5;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #ff6b9d;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .notice-item {
+            background: linear-gradient(135deg, #e0f7fa 0%, #e1bee7 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        .notice-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .menu-list {
+            background: linear-gradient(135deg, #fff9c4 0%, #ffccbc 100%);
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.3em;
+            line-height: 2;
+        }
+
+        .menu-item {
+            padding: 8px 0;
+            border-bottom: 2px dashed #ffab91;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #c5e1a5 0%, #80deea 100%);
+            padding: 20px;
+            border-radius: 15px;
+            font-size: 1.3em;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .header p {
+                font-size: 1.2em;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
+            .notice-item, .menu-list, .contact {
+                font-size: 1.1em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌈 4학년 1반 🌈</h1>
+            <p>담임: 선생님</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <div class="section-title">📢 학급 공지사항</div>
+                <div class="notice-item">
+                    <strong>📚 내일은 현장학습날!</strong><br>
+                    과천과학관으로 갑니다. 도시락과 물을 꼭 챙겨오세요!
+                </div>
+                <div class="notice-item">
+                    <strong>✏️ 받아쓰기 시험 안내</strong><br>
+                    이번 주 금요일 1교시에 3단원 받아쓰기 시험이 있습니다.
+                </div>
+                <div class="notice-item">
+                    <strong>🎨 미술 준비물</strong><br>
+                    수요일 미술시간에 8절 도화지, 물감, 붓이 필요해요.
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">🍴 오늘의 급식 메뉴</div>
+                <div class="menu-list">
+                    <div class="menu-item">🍚 김치볶음밥</div>
+                    <div class="menu-item">🥣 미소된장국</div>
+                    <div class="menu-item">🥟 만두튀김</div>
+                    <div class="menu-item">🥗 깍두기</div>
+                    <div class="menu-item">🍓 딸기우유</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">📞 연락처</div>
+                <div class="contact">
+                    <p><strong>담임 선생님</strong></p>
+                    <p>📱 전화: 010-XXXX-XXXX</p>
+                    <p>✉️ 이메일: teacher@school.kr</p>
+                    <p>🏫 교무실: 031-XXX-XXXX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
